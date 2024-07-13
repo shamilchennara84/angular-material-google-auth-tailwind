@@ -1,1 +1,41 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>apps</mat-icon>
+  </button>
+  <span>Auth</span>
+
+  <span class="flex-grow flex-shrink"></span>
+
+  <!-- <button mat-icon-button matMenuTriggerFor="signUpMenu" aria-label="Open Sign Up Menu" class="md:hidden">
+    <mat-icon>more_vert</mat-icon>
+</button> -->
+  <div *ngIf="!isLoggedIn; else loggedInTemplate">
+    <div class="block md:hidden">
+      <button mat-icon-button [matMenuTriggerFor]="beforeMenu" aria-label="Open Menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </div>
+
+    <div class="hidden md:block">
+      <button mat-raised-button color="accent" aria-label="Sign Up" class="inline-flex items-center px-4 py-2 mr-4">
+        <mat-icon class="mr-2">login</mat-icon>
+        Sign In
+      </button>
+
+      <button mat-raised-button aria-label="Sign Up" class="inline-flex items-center px-4 py-2">
+        <mat-icon class="mr-2">app_registration</mat-icon>
+        Sign Up
+      </button>
+    </div>
+  </div>
+
+  <ng-template #loggedInTemplate>
+    <button mat-icon-button aria-label="User Profile">
+      <mat-icon>person</mat-icon>
+    </button>
+  </ng-template>
+  </mat-toolbar>

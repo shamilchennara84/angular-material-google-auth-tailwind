@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<div id="wrapper" class="flex flex-col min-h-screen">
+  <app-header></app-header>
+  <!-- flex-grow: Allows the element to grow and take up available space.
+  overflow-auto: Adds scrollbars if the content overflows the element’s box -->
+  <div class="main flex-grow overflow-auto p-4">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- mt-auto: Uses margin-top auto to push the footer to the bottom. -->
+  <app-footer class="mt-auto"></app-footer>
+  
+</div>
