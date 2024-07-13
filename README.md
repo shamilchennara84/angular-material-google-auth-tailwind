@@ -1,27 +1,15 @@
-# Auth
+# ng-tailwind-auth-system
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+## Description
 
-## Development server
+`ng-tailwind-auth-system` is a reusable authentication system built with Angular 17, Angular Material, reactive forms, Tailwind CSS, and Google authentication. This project provides a robust and flexible authentication solution that can be easily integrated into any Angular application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Angular 17**: Leverage the latest features and improvements in Angular.
+- **Angular Material**: Use Material Design components for a polished and consistent UI.
+- **Reactive Forms**: Implement powerful and flexible forms with Angular's reactive forms.
+- **Google Authentication**: Seamlessly integrate Google authentication to simplify user login.
+- **Tailwind CSS**: Utilize utility-first CSS for rapid UI development and customization.
+- **Reusable Components**: Modular and reusable components to streamline the integration process.
+- **Responsive Design**: Ensure a great user experience across different devices and screen sizes.
